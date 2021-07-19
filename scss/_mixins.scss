@@ -1,0 +1,10 @@
+@mixin line-header($right, $top) {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    right: $right;
+    top: $top;
+}
