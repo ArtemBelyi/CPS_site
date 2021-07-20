@@ -1,0 +1,33 @@
+@import "_var";
+@import "_mixins";
+
+.info-services {
+    display: flex;
+    flex-direction: column;
+    min-width: $min-width;
+    background-color: #F8F8F8;
+    font-family: $font-lakes-regular;
+    color: #1B1C21;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    &__excerpt {
+        padding: 0px 16px;
+    }
+    &__link {
+        display: block;
+        position: relative;
+        margin: 16px auto 16px 32px;
+        font-family: $font-lakes-medium;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+        color: #1B1C21;
+        text-decoration: none;
+
+    }
+    &__icon {
+        position: absolute;
+        left: -24px;
+        bottom: 4px;
+        color: #B8FFEC;
+    }
+}

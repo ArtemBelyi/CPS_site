@@ -1,0 +1,41 @@
+@import "_var";
+@import "_mixins";
+
+.menu-container {
+    padding: 24px 16px 24px 16px;
+    min-width: $min-width;
+    background-color: #F8F8F8;
+    border-top: 1px solid #D9FFF5;
+}
+.caption {
+    font-family: $font-lakes-bolt;
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 1px 0;
+    &::before {
+        @include line-caption(-16px, 0px, 4px)
+    }
+}
+.price-list {
+    display: flex;
+    font-family: $font-lakes-medium;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+    overflow: scroll;
+    &__link {
+        text-decoration: none;
+        color: #7E7E82;
+        white-space: nowrap;
+    }
+    &__item {
+        padding: 10px 16px 8px 16px;
+        &--active {
+            background-color: #fff;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            padding: 7px 16px 7px 16px;
+        }
+    }
+}
