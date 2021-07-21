@@ -10,8 +10,25 @@
     color: #1B1C21;
     font-size: 14px;
     letter-spacing: 0.2px;
-    &__excerpt {
-        padding: 0px 16px;
+    @media (min-width: $medium) {
+        flex-direction: row;
+    }
+    &__item {
+        @media (min-width: $medium) {
+            margin: 0px 24px;
+        }
+    }
+}
+.excerpt {
+    padding: 0px 16px;
+    @media (min-width: $medium) {
+        padding: 0;
+    }
+    &__icon {
+        position: absolute;
+        left: -24px;
+        bottom: 4px;
+        color: #B8FFEC;
     }
     &__link {
         display: block;
@@ -22,12 +39,10 @@
         letter-spacing: -0.2px;
         color: #1B1C21;
         text-decoration: none;
-
     }
-    &__icon {
-        position: absolute;
-        left: -24px;
-        bottom: 4px;
-        color: #B8FFEC;
+}
+.thumb-block {
+    @media (min-width: $medium) {
+        border-radius: 10px;
     }
 }
