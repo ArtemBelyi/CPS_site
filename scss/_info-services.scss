@@ -17,12 +17,22 @@
         @media (min-width: $medium) {
             margin: 0px 24px;
         }
+        @media (min-width: $large) {
+            margin: 0px 32px;
+        }
     }
 }
 .excerpt {
     padding: 0px 16px;
     @media (min-width: $medium) {
         padding: 0;
+    }
+    &__desc {
+        height: 110px;
+        overflow: hidden;
+        @media (min-width: $medium) {
+            height: 160px;
+        }
     }
     &__icon {
         position: absolute;
@@ -41,8 +51,25 @@
         text-decoration: none;
     }
 }
-.thumb-block {
+.thumb-block__pick-mini {
     @media (min-width: $medium) {
-        border-radius: 10px;
+        display: none;
+    }
+}
+.thumb-block__pick-medium {
+    display: none;
+    border-radius: 8px;
+    @media (min-width: $medium) {
+        display: block;
+    }
+    @media (min-width: $large) {
+        display: none;
+    }
+}
+.thumb-block__pick-large {
+    display: none;
+    border-radius: 8px;
+    @media (min-width: $large) {
+        display: block;
     }
 }

@@ -3,6 +3,9 @@
 
 
 .header {
+    @media (min-width: $large) {
+        display: none;
+    }
     &__content {
         min-width: $min-width;
         height: 88px;
