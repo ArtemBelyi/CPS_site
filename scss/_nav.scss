@@ -69,11 +69,6 @@
         flex-wrap: wrap;
         overflow: visible;
     }
-    &__link {
-        text-decoration: none;
-        color: #7E7E82;
-        white-space: nowrap;
-    }
     &__item {
         padding: 10px 16px 8px 16px;
         @media (min-width: $large) {
@@ -85,5 +80,15 @@
             border-radius: 6px;
             padding: 7px 16px 7px 16px;
         }
+        &:active {
+            background-color: #fff;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            padding: 7px 16px 7px 16px;
+        }
+    }
+    &__item-text {
+        color: #7E7E82;
+        white-space: nowrap;
     }
 }

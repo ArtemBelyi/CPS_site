@@ -340,12 +340,6 @@
   }
 }
 
-.price-list__link {
-  text-decoration: none;
-  color: #7E7E82;
-  white-space: nowrap;
-}
-
 .price-list__item {
   padding: 10px 16px 8px 16px;
 }
@@ -361,6 +355,18 @@
   border: 2px solid #B8FFEC;
   border-radius: 6px;
   padding: 7px 16px 7px 16px;
+}
+
+.price-list__item:active {
+  background-color: #fff;
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+  padding: 7px 16px 7px 16px;
+}
+
+.price-list__item-text {
+  color: #7E7E82;
+  white-space: nowrap;
 }
 
 @font-face {
@@ -463,37 +469,47 @@
   text-decoration: none;
 }
 
-@media (min-width: 767px) {
-  .thumb-block__pick-mini {
-    display: none;
-  }
+/*.thumb-block__pick-mini {
+    @media (min-width: $medium) {
+        display: none;
+    }
 }
-
 .thumb-block__pick-medium {
-  display: none;
-  border-radius: 8px;
+    display: none;
+    border-radius: 8px;
+    @media (min-width: $medium) {
+        display: block;
+    }
+    @media (min-width: $large) {
+        display: none;
+    }
+}
+.thumb-block__pick-large {
+    border-radius: 8px;
+    @media (min-width: $large) {
+        display: block;
+    }
+}*/
+.thumb-block {
+  min-width: 320px;
+  height: 180px;
+  background-image: url("../img/main/picture/cps-large.png");
+  background-size: cover;
 }
 
 @media (min-width: 767px) {
-  .thumb-block__pick-medium {
-    display: block;
+  .thumb-block {
+    min-width: 360px;
+    height: 210px;
+    border-radius: 8px;
   }
 }
 
 @media (min-width: 1115px) {
-  .thumb-block__pick-medium {
-    display: none;
-  }
-}
-
-.thumb-block__pick-large {
-  display: none;
-  border-radius: 8px;
-}
-
-@media (min-width: 1115px) {
-  .thumb-block__pick-large {
-    display: block;
+  .thumb-block {
+    min-width: 530px;
+    height: 310px;
+    border-radius: 8px;
   }
 }
 
