@@ -78,10 +78,46 @@
 
 .menu__item:last-child {
   padding-left: 0px;
+  margin: 24px 16px 24px auto;
+}
+
+@media (min-width: 767px) {
+  .menu__item:last-child {
+    margin: 24px 24px 24px 0px;
+    margin-left: auto;
+  }
 }
 
 .menu__item:first-child {
   position: relative;
+}
+
+.menu__item:nth-child(2) {
+  margin-right: 17px;
+  position: relative;
+}
+
+@media (min-width: 767px) {
+  .menu__item:nth-child(2) {
+    margin-left: 18px;
+  }
+}
+
+.menu__item:nth-child(2)::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+  right: -17px;
+  top: 10px;
+}
+
+@media (min-width: 767px) {
+  .menu__item:nth-child(2)::after {
+    display: none;
+  }
 }
 
 @media (min-width: 767px) {
@@ -103,34 +139,6 @@
   }
 }
 
-.logo-group {
-  position: relative;
-  margin-right: 17px;
-}
-
-@media (min-width: 767px) {
-  .logo-group {
-    margin-left: 18px;
-  }
-}
-
-.logo-group::after {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 2px;
-  height: 32px;
-  background-color: #EAEAEA;
-  right: -17px;
-  top: 10px;
-}
-
-@media (min-width: 767px) {
-  .logo-group::after {
-    display: none;
-  }
-}
-
 .link-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,18 +148,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-height: 40px;
-  margin: 24px 16px 24px 0px;
-  margin-left: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-@media (min-width: 767px) {
-  .link-menu {
-    margin: 24px 24px 24px 0px;
-    margin-left: auto;
-  }
 }
 
 .link-menu__item {
@@ -212,38 +211,38 @@
   font-style: normal;
 }
 
-.menu-container {
+.menu__content {
   position: relative;
   padding: 24px 16px 24px 16px;
-  min-width: 320px;
-  background-color: #F8F8F8;
-  border-top: 1px solid #D9FFF5;
 }
 
 @media (min-width: 767px) {
-  .menu-container {
+  .menu__content {
     min-width: 768px;
     padding: 24px 16px 32px 24px;
   }
 }
 
 @media (min-width: 1115px) {
-  .menu-container {
+  .menu__content {
     min-width: 1120px;
     padding: 42px 32px 10px 32px;
   }
 }
 
-.caption {
-  font-family: "TT Lakes Bold";
-  font-size: 28px;
-  letter-spacing: -0.6px;
+.menu-container {
+  min-width: 320px;
+  background-color: #F8F8F8;
+  border-top: 1px solid #D9FFF5;
+}
+
+.menu-container__caption {
   position: relative;
   margin-bottom: 24px;
   padding: 1px 0;
 }
 
-.caption::before {
+.menu-container__caption::before {
   display: block;
   position: absolute;
   content: "";
@@ -257,7 +256,7 @@
 }
 
 @media (min-width: 767px) {
-  .caption::before {
+  .menu-container__caption::before {
     display: block;
     position: absolute;
     content: "";
@@ -272,7 +271,7 @@
 }
 
 @media (min-width: 1115px) {
-  .caption::before {
+  .menu-container__caption::before {
     display: block;
     position: absolute;
     content: "";
@@ -286,12 +285,12 @@
   }
 }
 
-.status-list {
+.menu-container__status-list {
   display: none;
 }
 
 @media (min-width: 1115px) {
-  .status-list {
+  .menu-container__status-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -299,6 +298,12 @@
     top: 42px;
     right: 64px;
   }
+}
+
+.caption {
+  font-family: "TT Lakes Bold";
+  font-size: 28px;
+  letter-spacing: -0.6px;
 }
 
 .status-list__item {
@@ -418,6 +423,16 @@
   }
 }
 
+.info-services__item {
+  padding: 0px 16px;
+}
+
+@media (min-width: 767px) {
+  .info-services__item {
+    padding: 0;
+  }
+}
+
 @media (min-width: 767px) {
   .info-services__item {
     margin: 0px 24px;
@@ -427,16 +442,6 @@
 @media (min-width: 1115px) {
   .info-services__item {
     margin: 0px 32px;
-  }
-}
-
-.excerpt {
-  padding: 0px 16px;
-}
-
-@media (min-width: 767px) {
-  .excerpt {
-    padding: 0;
   }
 }
 
@@ -469,27 +474,6 @@
   text-decoration: none;
 }
 
-/*.thumb-block__pick-mini {
-    @media (min-width: $medium) {
-        display: none;
-    }
-}
-.thumb-block__pick-medium {
-    display: none;
-    border-radius: 8px;
-    @media (min-width: $medium) {
-        display: block;
-    }
-    @media (min-width: $large) {
-        display: none;
-    }
-}
-.thumb-block__pick-large {
-    border-radius: 8px;
-    @media (min-width: $large) {
-        display: block;
-    }
-}*/
 .thumb-block {
   min-width: 320px;
   height: 180px;

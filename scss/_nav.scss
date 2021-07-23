@@ -1,12 +1,9 @@
 @import "_var";
 @import "_mixins";
 
-.menu-container {
+.menu__content {
     position: relative;
     padding: 24px 16px 24px 16px;
-    min-width: $min-width;
-    background-color: #F8F8F8;
-    border-top: 1px solid #D9FFF5;
     @media (min-width: $medium) {
         min-width: $middle-width;
         padding: 24px 16px 32px 24px;
@@ -16,31 +13,40 @@
         padding: 42px 32px 10px 32px;
     }
 }
+.menu-container {
+    min-width: $min-width;
+    background-color: #F8F8F8;
+    border-top: 1px solid #D9FFF5;
+    &__caption {
+        position: relative;
+        margin-bottom: 24px;
+        padding: 1px 0;
+        &::before {
+            @include line-caption(-16px, 0px, 4px);
+            @media (min-width: $medium) {
+                @include line-caption(-24px, 0px, 4px);
+            }
+            @media (min-width: $large) {
+                @include line-caption(-32px, 0px, 4px);
+            }
+        }
+    }
+    &__status-list {
+        display: none;
+        @media (min-width: $large) {
+            display: flex;
+            position: absolute;
+            top: 42px;
+            right: 64px;
+        }
+    }
+}
 .caption {
     font-family: $font-lakes-bolt;
     font-size: 28px;
     letter-spacing: -0.6px;
-    position: relative;
-    margin-bottom: 24px;
-    padding: 1px 0;
-    &::before {
-        @include line-caption(-16px, 0px, 4px);
-        @media (min-width: $medium) {
-            @include line-caption(-24px, 0px, 4px);
-        }
-        @media (min-width: $large) {
-            @include line-caption(-32px, 0px, 4px);
-        }
-    }
 }
 .status-list {
-    display: none;
-    @media (min-width: $large) {
-        display: flex;
-        position: absolute;
-        top: 42px;
-        right: 64px;
-    }
     &__item {
         margin: 0 32px;
         &:first-child {

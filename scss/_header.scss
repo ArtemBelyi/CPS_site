@@ -22,9 +22,27 @@
     padding-left: 16px;
     &:last-child {
     padding-left: 0px;
+    margin: 24px 16px 24px auto;
+    @media (min-width: $medium) {
+        margin: 24px 24px 24px 0px;
+        margin-left: auto;
+    }
     }
     &:first-child {
         position: relative;
+    }
+    &:nth-child(2) {
+        margin-right: 17px;
+        @media (min-width: $medium) {
+            margin-left: 18px;
+        }
+        position: relative;
+        &::after {
+        @include line-header(-17px, 10px);
+        @media (min-width: $medium) {
+            display: none;
+        }
+    }
     }
     &:first-child::after {
         @media (min-width: $medium) {
@@ -35,32 +53,12 @@
         padding-left: 24px;
     }
 }
-.logo-group {
-    position: relative;
-    margin-right: 17px;
-    @media (min-width: $medium) {
-        margin-left: 18px;
-    }
-
-    &::after {
-        @include line-header(-17px, 10px);
-        @media (min-width: $medium) {
-            display: none;
-        }
-    }
-}
 .link-menu {
     display: flex;
     flex-basis: 96px;
     box-sizing: border-box;
     max-height: 40px;
-    margin: 24px 16px 24px 0px;
-    margin-left: auto;
     justify-content: space-between;
-    @media (min-width: $medium) {
-        margin: 24px 24px 24px 0px;
-        margin-left: auto;
-    }
     &__item {
         margin-left: 16px;
         &:nth-child(-n+3) {
