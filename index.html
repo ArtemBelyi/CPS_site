@@ -4,61 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__content">
-            <div class="header__menu menu">
-                <div class="menu__item"><img src="./img/header/icons/burger.png" alt="burger" class="menu__burger-icon"></div>
-                <div class="menu__item logo-group"><img src="./img/header/logo/Group.png" alt="logo_group" class="logo-group__logo"></div>
-                <div class="menu__item link-menu">
-                    <div class="link-menu__item"><img src="./img/header/icons/call.png" alt="repair" class="call"></div>
-                    <div class="link-menu__item"><img src="./img/header/icons/chat.png" alt="repair" class="chat"></div>
-                    <div class="link-menu__item"><img src="./img/header/icons/profile.png" alt="repair" class="profile"></div>
-                    <div class="link-menu__item"><img src="./img/header/icons/repair.png" alt="repair" class="repair"></div>
-                    <div class="link-menu__item"><img src="./img/header/icons/checkstatus.png" alt="checkstatus" class="checkstatus"></div>
+    <div class="sidebar">
+        <div class="sidebar__container sidebar-content">
+            <div class="sidebar-content__header header-sidebar">
+                <div class="header-sidebar__item btn-logo"><img src="/img/sidebar/icons/close.png" alt="" class="btn-logo__close"></div>
+                <div class="header-sidebar__item pic-logo"><img src="/img/sidebar/logo/Group.png" alt="" class="pic-logo__logo"></div>
+                <div class="header-sidebar__item btn-logo"><img src="/img/sidebar/icons/search.png" alt="" class="btn-logo__search"></div>
+            </div>
+            <div class="sidebar-content__menu-list menu-list">
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link menu-list__item-link--active">Ремонт техники</a></div>
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link">Услуги и сервисы</a></div>
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link">Корпопративным клиентам</a></div>
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link">Продавцам техники</a></div>
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link">Партнерам</a></div>
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link">Производителям</a></div>
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link">Наши сервисные центры</a></div>
+                <div class="menu-list__item"><a href="#" class="menu-list__item-link">Контакты</a></div>
+            </div>
+            <div class="sidebar-content__footer footer-sidebar">
+                <div class="footer-sidebar__btn-list btn-list">
+                    <div class="btn-list__item"><img src="/img/sidebar/icons/call.png" alt="pic-phone" class="btn-logo__close"></div>
+                    <div class="btn-list__item"><img src="/img/sidebar/icons/chat.png" alt="pic-chat" class="btn-logo__close"></div>
+                    <div class="btn-list__item"><img src="/img/sidebar/icons/profile.png" alt="pic-profile" class="btn-logo__close"></div>
+                </div>
+                <div class="footer-sidebar__contacts block-contacts">
+                    <span class="block-contacts__mail">mail@cps.com</span>
+                    <span class="block-contacts__phone">8 800 890 89 00</span>
+                </div>
+                <div class="footer-sidebar__language change-language">
+                    <span class="change-language__item change-language__item--active">RU</span>
+                    <span class="change-language__item">EN</span>
+                    <span class="change-language__item">CH</span>
                 </div>
             </div>
         </div>
-    </header>
-    <nav class="menu">
-        <div class="menu__content menu-container">
-            <div class="menu-container__caption caption">Услуги и сервисы</div>
-            <div class="menu-container__status-list status-list">
-                <div class="status-list__item"><a href="#" class="status-list__link">Оставить заявку</a><img src="./img/header/icons/repair.png" alt="repair" class="repair"></div>
-                <div class="status-list__item"><a href="#" class="status-list__link">Статус ремонта</a><img src="./img/header/icons/checkstatus.png" alt="checkstatus" class="checkstatus"></div>
-            </div>
-            <div class="menu-container__list price-list">
-                <div class="price-list__item price-list__item--active"><span class="price-list__item-text">Ремонтируемые устройства</span></div>
-                <div class="price-list__item"><span class="price-list__item-text">Дополнительные услуги</span></div>
-                <div class="price-list__item"><span class="price-list__item-text">Цены на услуги</span></div>
-                <div class="price-list__item"><span class="price-list__item-text">Специальные цены</span></div>
-                <div class="price-list__item"><span class="price-list__item-text">Адреса сервисных центров</span></div>
-                <div class="price-list__item"><span class="price-list__item-text">Отзывы</span></div>
-            </div>
-        </div>
-    </nav>
-    <main class="page">
-        <div class="page__info-services info-services">
-            <div class="info-services__item excerpt">
-                <div class="excerpt__desc">
-                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                        
-                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. 
-                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>   
-                </div> 
-                <a href="#" class="excerpt__link">
-                    <i class="excerpt__icon fa fa-angle-double-down" aria-hidden="true"></i>
-                    Читать далее
-                </a>
-            </div>
-            <div class="info-services__item thumb-block"> 
-            </div>
-        </div>
-    </main>
+    </div>
+    
 </body>
 </html>
