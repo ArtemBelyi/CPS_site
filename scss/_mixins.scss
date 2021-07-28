@@ -8,12 +8,12 @@
     right: $right;
     top: $top;
 }
-@mixin line-caption($left, $top, $width) {
+@mixin line-caption($left, $top, $width, $height) {
     display: block;
     position: absolute;
     content: "";
     width: $width;
-    height: 40px;
+    height: $height;
     background-color: #41F6D7;
     left: $left;
     top: $top;

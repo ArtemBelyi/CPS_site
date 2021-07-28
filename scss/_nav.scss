@@ -22,12 +22,12 @@
         margin-bottom: 24px;
         padding: 1px 0;
         &::before {
-            @include line-caption(-16px, 0px, 4px);
+            @include line-caption(-16px, 0px, 4px, 32px);
             @media (min-width: $medium) {
-                @include line-caption(-24px, 0px, 4px);
+                @include line-caption(-24px, 0px, 4px, 32px);
             }
             @media (min-width: $large) {
-                @include line-caption(-32px, 0px, 4px);
+                @include line-caption(-32px, 0px, 4px, 32px);
             }
         }
     }
