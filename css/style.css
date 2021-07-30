@@ -101,14 +101,19 @@ body {
   padding-left: 17px;
 }
 
-.btn-logo {
+.header-sidebar-btn-logo {
   -webkit-transition-property: opacity;
   transition-property: opacity;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }
 
-.btn-logo:hover {
+.header-sidebar-btn-logo:hover {
   opacity: 0.7;
 }
 
@@ -116,6 +121,11 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  padding: 0;
+}
+
+.menu-list {
+  list-style-type: none;
 }
 
 .menu-list__item {
@@ -165,7 +175,12 @@ body {
 }
 
 .btn-list__item {
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   margin-right: 16px;
+  padding: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   cursor: pointer;
