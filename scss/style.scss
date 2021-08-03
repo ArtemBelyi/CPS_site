@@ -1,8 +1,11 @@
 @import "_var";
-//@import "_header";
-//@import "_nav";
-//@import "info-services";
+@import "_header";
+@import "_nav";
+@import "_info-services";
 @import "_sidebar";
+@import "_brands-block";
+@import "_swiper";
+@import "_pagination";
 
 body {
     margin: 0;

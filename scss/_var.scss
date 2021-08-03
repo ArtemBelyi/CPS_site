@@ -11,3 +11,12 @@ $max-width: 1120px;
 $small: 318px;
 $medium: 767px;
 $large: 1115px;
+
+@media (min-width: $medium) {
+    $amount-item: 8;
+}
+
+
+@media (min-width: $large) {
+    $amount-item: 10;
+}
