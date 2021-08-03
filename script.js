@@ -8,7 +8,7 @@ if (document.documentElement.clientWidth == 1920) {
 }
 
 window.addEventListener('resize', () => {
-    if (document.documentElement.clientWidth > 1670 && boxContainerArr.length < 12) {
+    if (document.documentElement.clientWidth > 1400 && boxContainerArr.length < 10) {
         btnMore.style.display = "none";
     } else {
         btnMore.style.display = "block";
