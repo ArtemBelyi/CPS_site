@@ -24,7 +24,7 @@ function script() {
             elem.classList.add(classNameElement);
             elem.innerHTML = `
             <div class="block-slide__content">
-                <div class="block-slide__elem logo-brand"><img src="./img/slider/logo-brands/${boxContainerArr[i]}" class="block-slide__elem-pic"></div>
+                <div class="block-slide__elem logo-brand"><img src="./src/img/slider/logo-brands/${boxContainerArr[i]}" class="block-slide__elem-pic"></div>
                 <button class="block-slide__elem elem-button"><img src="./img/slider/icon-button/go.png" class="elem-button__icon"></button>
             </div>
             `;
