@@ -1,5 +1,5 @@
-import sliders from './sliders';
-import script from './script';
+import sliders from './sliders.js';
+import script from './script.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
