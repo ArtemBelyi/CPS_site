@@ -16,7 +16,7 @@
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sliders.js */ \"./src/js/sliders.js\");\n/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n\r\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n  (0,_sliders_js__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n  (0,_script_js__WEBPACK_IMPORTED_MODULE_1__.default)();\r\n});\r\n\r\n\n\n//# sourceURL=webpack://cps_site/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sliders_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sliders.js */ \"./src/js/sliders.js\");\n/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script.js */ \"./src/js/script.js\");\n\r\n\r\n//import '../scss/style.scss';\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n  (0,_sliders_js__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n  (0,_script_js__WEBPACK_IMPORTED_MODULE_1__.default)();\r\n});\r\n\r\n\n\n//# sourceURL=webpack://cps_site/./src/js/index.js?");
 
 /***/ }),
 
