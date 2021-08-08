@@ -1,3 +1,4 @@
+import Swiper from 'swiper/bundle';
 
 function sliders() {
     const swiperBrands = new Swiper('.swiper-container', {
